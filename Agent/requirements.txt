@@ -1,0 +1,3 @@
+# Python packages the agent needs (install once):  pip install -r requirements.txt
+xlrd==2.0.1
+openpyxl>=3.1

@@ -1,0 +1,36 @@
+# --- Secrets / environment ---
+.env
+.env.local
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+
+# --- Real data: NEVER commit spreadsheets or vendor exports ---
+*.XLS
+*.xls
+*.xlsx
+*.xlsm
+*.XLSX
+
+# --- Real runtime config (only mapping.example.json is tracked) ---
+Agent/config/mapping.json
+mapping.json
+
+# --- Data folders (inputs, outputs, archives, logs) ---
+1_Drop_PDI_Reports_Here/
+2_Reports_Output/
+Backups/
+logs/
+Agent/logs/
+
+# --- Binaries ---
+*.exe
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db

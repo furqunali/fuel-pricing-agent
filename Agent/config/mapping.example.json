@@ -1,0 +1,23 @@
+{
+  "_README": "SAMPLE config (fictional data). Copy this to mapping.json and fill in your own values. 'column_map' maps each report column to [supplier_key, PDI terminal code], or null if the column has no PDI source. 'vendor_files' maps each supplier_key to the filename you drop in 1_Drop_PDI_Reports_Here.",
+  "diesel_grade": "ULSD#2 SAMPLE",
+  "year": 2026,
+  "products": {
+    "Unl 87": "Regular",
+    "Mid 89": "Midgrade",
+    "Pre 93": "Premium",
+    "ULSD":   "Diesel"
+  },
+  "vendor_files": {
+    "SupplierA": "SupplierA.XLS",
+    "SupplierB": "SupplierB.XLS",
+    "SupplierC": "SupplierC.XLS"
+  },
+  "column_map": {
+    "Store 1001 - Rack":    ["SupplierA", "TERM-A1"],
+    "Store 1001 - Formula": ["SupplierA", "TERM-A1-CON"],
+    "Store 1002 - Rack":    ["SupplierB", "TERM-B7"],
+    "Store 1003 - Rack":    ["SupplierC", "TERM-C3"],
+    "Store 1003 - Unbranded": null
+  }
+}
